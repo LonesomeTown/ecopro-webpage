@@ -9,13 +9,33 @@
     <!-- Awesome Icon -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="public/images/favicon-32x32.png">
+    <style>
+        /* Define Amazon Ember Bold font */
+        @font-face {
+            font-family: 'Amazon Ember Bold';
+            src: url('public/fonts/Amazon-Ember-Bold.ttf') format('truetype');
+            font-weight: bold;
+        }
+
+        /* Define Amazon Ember Light font */
+        @font-face {
+            font-family: 'Amazon Ember Light';
+            src: url('public/fonts/Amazon-Ember-Light.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        /* Apply font to specific elements */
+        body {
+            font-family: 'Amazon Ember Light', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-black shadow fixed top-0 left-0 right-0 z-10">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-white text-xl font-bold">
-                <img src="./public/nasa-logo.png" alt="NASA Logo" class="h-12"> 
+                <img src="./public/images/nasa-logo.png" alt="NASA Logo" class="h-12"> 
             </a>
             <div class="flex items-center">
                 <a href="#ecopro" class="text-white hover:text-gray-600 px-3 font-bold">What is EcoPro?</a>
@@ -29,7 +49,7 @@
 
     <main>
         <section class="relative min-h-screen overflow-hidden mb-20">
-            <img src="./public/nasa-bg.jpg" alt="Main Image" class="absolute inset-0 w-full h-full object-cover">
+            <img src="./public/images/nasa-bg.jpg" alt="Main Image" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center text-white px-6">
@@ -49,7 +69,7 @@
                     </p>
                 </div>
                 <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
-                    <img src="public/nasa-1.jpg" alt="EcoPro" class="shadow-xl rounded-lg transform scale-90">
+                    <img src="public/images/nasa-1.jpg" alt="EcoPro" class="shadow-xl rounded-lg transform scale-90">
                 </div>
             </div>
         </section>
@@ -61,7 +81,7 @@
                     The EcoPro platform integrates a comprehensive suite of services that empower scientists and researchers to effectively analyze, visualize, and collaborate on ecological data. The architecture is designed to facilitate a seamless workflow between data ingestion, analysis, and interpretation, ensuring that insights derived from complex ecological models are accessible and actionable.
                 </p>
             </div>
-            <img src="./public/use-scenarios.png" alt="EcoPro System Architecture and Use Scenarios" class="shadow-xl rounded-lg transform scale-90">
+            <img src="./public/images/use-scenarios.png" alt="EcoPro System Architecture and Use Scenarios" class="shadow-xl rounded-lg transform scale-90">
         </section>
 
         <section id="system" class="container mx-auto px-6 py-8">
@@ -102,7 +122,7 @@
                 <li class="text-gray-600">Validate the ecological projections against high-resolution observation data (data unused in the downscaling and ecological model development step).</li>
             </ol>
             <div class="flex justify-center">
-                <img src="./public/workflow.png" alt="Workflow Diagram" class="shadow-xl rounded-lg transform scale-90 max-w-full h-auto">
+                <img src="./public/images/workflow.png" alt="Workflow Diagram" class="shadow-xl rounded-lg transform scale-90 max-w-full h-auto">
             </div>
         </section>
 
@@ -112,10 +132,10 @@
             <!-- Kelp Forest Projection -->
             <div class="flex justify-center items-center space-x-4 mb-4">
                 <div class="flex-1">
-                    <img src="./public/projection1.png" alt="Kelp Locations" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                    <img src="./public/images/projection1.png" alt="Kelp Locations" class="max-w-lg mx-auto h-auto shadow-lg rounded">
                 </div>
                 <div class="flex-1">
-                    <img src="./public/projection2.png" alt="Kelp Projections" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                    <img src="./public/images/projection2.png" alt="Kelp Projections" class="max-w-lg mx-auto h-auto shadow-lg rounded">
                 </div>
             </div>
             <p class="text-center font-semibold mb-24">Kelp Forest Projection Analysis</p>
@@ -123,10 +143,10 @@
             <!-- Sierra Nevada Forest Tree Mortality Projection -->
             <div class="flex justify-center items-center space-x-4 mb-4">
                 <div class="flex-1">
-                    <img src="./public/projection3.png" alt="Sierra Nevada Forest Tree Mortality Projection" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                    <img src="./public/images/projection3.png" alt="Sierra Nevada Forest Tree Mortality Projection" class="max-w-lg mx-auto h-auto shadow-lg rounded">
                 </div>
                 <div class="flex-1">
-                    <img src="./public/projection4.png" alt="Sierra Nevada Forest Tree Mortality Projection" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                    <img src="./public/images/projection4.png" alt="Sierra Nevada Forest Tree Mortality Projection" class="max-w-lg mx-auto h-auto shadow-lg rounded">
                 </div>
             </div>
             <h3 class="text-center font-semibold">Sierra Nevada Forest Tree Mortality Projection</h3>
@@ -135,7 +155,7 @@
         <footer class="bg-black">
             <div class="container mx-auto px-4 py-6 text-center">
                 <!-- Icon (use an actual image tag or an SVG inline) -->
-                <img src="public/nasa-logo.png" alt="NASA Logo" class="mx-auto mb-4" style="height: 50px;">
+                <img src="public/images/nasa-logo.png" alt="NASA Logo" class="mx-auto mb-4" style="height: 50px;">
                 
                 <!-- Text -->
                 <p class="text-gray-500 text-sm">© 2024 Data Science Infrastructure Lab, Southern Methodist University. All rights reserved.</p>
