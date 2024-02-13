@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPro: A Digital Twin for Ecological Projection</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Awesome Icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/favicon-32x32.png">
+</head>
+<body>
+    <header class="bg-black shadow fixed top-0 left-0 right-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">
+                <img src="./public/nasa-logo.png" alt="NASA Logo" class="h-12"> 
+            </a>
+            <div class="flex items-center">
+                <a href="#ecopro" class="text-white hover:text-gray-600 px-3 font-bold">What is EcoPro?</a>
+                <a href="#architecture" class="text-white hover:text-gray-600 px-3 font-bold">Architecture</a>
+                <a href="#system" class="text-white hover:text-gray-600 px-3 font-bold">System</a>
+                <a href="#workflow" class="text-white hover:text-gray-600 px-3 font-bold">Workflow</a>
+                <a href="#projections" class="text-white hover:text-gray-600 px-3 font-bold">Projections</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen overflow-hidden mb-20">
+            <img src="./public/nasa-bg.jpg" alt="Main Image" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white px-6">
+                    <h1 class="text-7xl font-bold mb-5">Predicting Ecosystem Changes with EcoPro</h1>
+                    <p class="p-lg margin-0 px-6 w-2/3 mx-auto color-spacesuit-white-important">EcoPro models the intricate dynamics of our planet's ecosystems, offering insights and foresight into environmental changes. Utilizing advanced analytics, we envision a sustainable future by understanding and managing the ecological impact of human activities.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="ecopro" class="container mx-auto px-6 py-8">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <h2 class="text-6xl font-bold mb-8" >What is EcoPro?</h2>
+                    <p class="text-gray-600 lg:w-4/5 leading-relaxed">
+                        EcoPro is a digital twin to perform an ecological projection which is to predict changes in ecosystems in response to environmental drivers. EcoPro provides a platform to access Earth Systems Model (ESM) outputs and Earth Systems observation datasets, to develop an ecological model that connects ecosystem predictors with environmental drivers, to downscale the ESM model outputs to the resolution relevant to the ecosystem, to apply the ecological model to the downscaled ESM model outputs, to visualize the ecological projection results to the high resolution to inform application users and decision makers, and to assess the performance of new observing systems for ecological projection. 
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                    <img src="public/nasa-1.jpg" alt="EcoPro" class="shadow-xl rounded-lg transform scale-90">
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="container mx-auto px-6 py-8">
+            <h2 class="text-4xl font-bold mb-8" >Architecture and Use Scenarios</h2>
+            <div class="mb-8">
+                <p class="text-gray-700">
+                    The EcoPro platform integrates a comprehensive suite of services that empower scientists and researchers to effectively analyze, visualize, and collaborate on ecological data. The architecture is designed to facilitate a seamless workflow between data ingestion, analysis, and interpretation, ensuring that insights derived from complex ecological models are accessible and actionable.
+                </p>
+            </div>
+            <img src="./public/use-scenarios.png" alt="EcoPro System Architecture and Use Scenarios" class="shadow-xl rounded-lg transform scale-90">
+        </section>
+
+        <section id="system" class="container mx-auto px-6 py-8">
+            <h2 class="text-6xl font-bold text-center mb-12" >EcoPro Systems</h2>
+            <div class="flex justify-center gap-8 mb-8">
+                <!-- Card 1: Analytic Server -->
+                <a href="https://jpl-cmda.org" target="_blank" class="w-64 flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition-all">
+                    <i class="fas fa-chart-line mb-4 text-3xl"></i>
+                    <h4 class="font-bold mb-2 text-xl">Analytic Server</h4>
+                    <p class="text-center text-gray-500">Perform the multidisciplinary analyses and model development.</p>
+                </a>
+                
+                <!-- Card 2: Visualization Server -->
+                <a href="YOUR_VISUALIZATION_SERVER_URL" target="_blank" class="w-64 flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition-all">
+                    <i class="fas fa-chart-area mb-4 text-3xl"></i>
+                    <h4 class="font-bold mb-2 text-xl">Visualization Server</h4>
+                    <p class="text-center text-gray-500">Visualize the result of ecological projection and engage an application community.</p>
+                </a>
+
+                <!-- Card 3: Collaboration Server -->
+                <a href="https://smudsi.org" target="_blank" class="w-64 flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition-all">
+                    <i class="fas fa-users mb-4 text-3xl"></i>
+                    <h4 class="font-bold mb-2 text-xl">Collaboration Server</h4>
+                    <p class="text-center text-gray-500">Provide a virtual collaborative workspace for sharing and publishing results.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="workflow" class="container mx-auto px-6 py-8">
+            <h2 class="text-4xl font-bold mb-8" >Workflow</h2>
+            <p class="text-lg text-gray-700 mb-6">Our ecological projection methodology follows the workflow of:</p>
+            <ol class="list-decimal list-inside space-y-2 mb-6">
+                <li class="text-gray-600">Collect, collate, calculate, and regrid the Earth Systems Model (ESM) predictor variables (e.g., sea surface temperature or precipitation index).</li>
+                <li class="text-gray-600">Downscale the predictor variables using geostatistical inference and high-resolution remote sensing observations.</li>
+                <li class="text-gray-600">Develop an ecological model to construct relevant predictors of health for the system in question and to relate these predictors to one or more predictands of interest.</li>
+                <li class="text-gray-600">Apply the ecological model to the downscaled ESM future projection data.</li>
+                <li class="text-gray-600">Quantify the uncertainty of the projection.</li>
+                <li class="text-gray-600">Validate the ecological projections against high-resolution observation data (data unused in the downscaling and ecological model development step).</li>
+            </ol>
+            <div class="flex justify-center">
+                <img src="./public/workflow.png" alt="Workflow Diagram" class="shadow-xl rounded-lg transform scale-90 max-w-full h-auto">
+            </div>
+        </section>
+
+        <section id="projections" class="container mx-auto px-6 py-8">
+            <h2 class="text-4xl font-bold text-center mb-12" >Visualizations and Projections</h2>
+            
+            <!-- Kelp Forest Projection -->
+            <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class="flex-1">
+                    <img src="./public/projection1.png" alt="Kelp Locations" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                </div>
+                <div class="flex-1">
+                    <img src="./public/projection2.png" alt="Kelp Projections" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                </div>
+            </div>
+            <p class="text-center font-semibold mb-24">Kelp Forest Projection Analysis</p>
+
+            <!-- Sierra Nevada Forest Tree Mortality Projection -->
+            <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class="flex-1">
+                    <img src="./public/projection3.png" alt="Sierra Nevada Forest Tree Mortality Projection" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                </div>
+                <div class="flex-1">
+                    <img src="./public/projection4.png" alt="Sierra Nevada Forest Tree Mortality Projection" class="max-w-lg mx-auto h-auto shadow-lg rounded">
+                </div>
+            </div>
+            <h3 class="text-center font-semibold">Sierra Nevada Forest Tree Mortality Projection</h3>
+        </section>
+
+        <footer class="bg-black">
+            <div class="container mx-auto px-4 py-6 text-center">
+                <!-- Icon (use an actual image tag or an SVG inline) -->
+                <img src="public/nasa-logo.png" alt="NASA Logo" class="mx-auto mb-4" style="height: 50px;">
+                
+                <!-- Text -->
+                <p class="text-gray-500 text-sm">© 2024 Data Science Infrastructure Lab, Southern Methodist University. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">Contact us at <a href="mailto:jiazhang@smu.edu" class="text-gray-500 hover:text-gray-500">jiazhang@smu.edu</a>.</p>
+            </div>
+        </footer>
+
+
+    </main>
+        
+
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
