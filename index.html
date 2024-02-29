@@ -88,14 +88,14 @@
             <h2 class="text-6xl font-bold text-center mb-12" >EcoPro Systems</h2>
             <div class="flex justify-center gap-8 mb-8">
                 <!-- Card 1: Analytic Server -->
-                <a href="https://jpl-cmda.org" target="_blank" class="w-64 flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition-all">
+                <a href="https://hub.jpl-cmda.org" target="_blank" class="w-64 flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition-all">
                     <i class="fas fa-chart-line mb-4 text-3xl"></i>
                     <h4 class="font-bold mb-2 text-xl">Analytic Server</h4>
                     <p class="text-center text-gray-500">Perform the multidisciplinary analyses and model development.</p>
                 </a>
                 
                 <!-- Card 2: Visualization Server -->
-                <a href="YOUR_VISUALIZATION_SERVER_URL" target="_blank" class="w-64 flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition-all">
+                <a href="https://ecopro-visualization.org" target="_blank" class="w-64 flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition-all">
                     <i class="fas fa-chart-area mb-4 text-3xl"></i>
                     <h4 class="font-bold mb-2 text-xl">Visualization Server</h4>
                     <p class="text-center text-gray-500">Visualize the result of ecological projection and engage an application community.</p>
@@ -170,5 +170,33 @@
 
 <!-- Materialize JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Adjust this value to match the height of your fixed header
+        const OFFSET_HEIGHT = 70; // Height of the fixed header
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default anchor click behavior
+
+                let targetId = this.getAttribute('href');
+                let targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // Calculate position to scroll to, accounting for fixed header
+                    let targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - OFFSET_HEIGHT;
+
+                    // Smooth scroll to target position
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
